@@ -28,4 +28,6 @@
 			<item value="git"/>
 		</list>
 	</section>
+	<section name="NewWizardAction">
+	</section>
 </section>
