@@ -12,19 +12,19 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.ui.console.ConsoleView"/>
 			<item value="org.eclipse.egit.ui.StagingView"/>
 			<item value="org.eclipse.ui.views.ProblemView"/>
 			<item value="org.eclipse.ui.resourcePerspective"/>
 			<item value="org.eclipse.pde.runtime.LogView"/>
-			<item value="org.eclipse.ui.console.ConsoleView"/>
 			<item value="org.eclipse.ui.navigator.ProjectExplorer"/>
 			<item value="org.eclipse.ui.views.ContentOutline"/>
 		</list>
 		<list key="orderedProviders">
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
-			<item value="org.eclipse.ui.perspectives"/>
 			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.ui.perspectives"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
@@ -32,19 +32,19 @@
 		<list key="textEntries">
 			<item value="1"/>
 			<item value="1"/>
-			<item value="2"/>
 			<item value="1"/>
+			<item value="2"/>
 			<item value="1"/>
 			<item value="1"/>
 			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="console"/>
 			<item value="git"/>
 			<item value="prob"/>
 			<item value="sour"/>
 			<item value="source"/>
 			<item value="error"/>
-			<item value="console"/>
 			<item value="project"/>
 			<item value="outline"/>
 		</list>

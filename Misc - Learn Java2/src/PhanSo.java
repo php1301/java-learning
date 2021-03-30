@@ -5,6 +5,12 @@ public class PhanSo {
 	private int mauSo;
 
 	public PhanSo() {
+
+	}
+
+	public PhanSo(int tuSo, int mauSo) {
+		this.tuSo = tuSo;
+		this.mauSo = mauSo;
 	}
 
 	public void nhap() {
@@ -13,11 +19,15 @@ public class PhanSo {
 		int mau = input.nextInt();
 		this.tuSo = tu;
 		this.mauSo = mau;
-		input.close();
+//		input.close();
 	}
 
 	public void xuat() {
-		System.out.println("Phan so la: " + tuSo + "/" + mauSo);
+		if (tuSo != mauSo)
+			System.out.println("Phan so la: " + tuSo + "/" + mauSo);
+		else {
+			System.out.println("Phan so la 1");
+		}
 	}
 
 	public int getMauSo() {
@@ -28,7 +38,7 @@ public class PhanSo {
 		this.mauSo = mauSo;
 	}
 
-	public void tong(PhanSo p) {
+	public PhanSo tong(PhanSo p) {
 		int resTu = 0;
 		int resMau = 0;
 		if (this.mauSo == p.mauSo) {
@@ -39,6 +49,31 @@ public class PhanSo {
 			resMau = mauSo * p.mauSo;
 		}
 		System.out.println("Tong la: " + resTu + "/" + resMau);
+		PhanSo res = new PhanSo(resTu, resMau);
+		return res;
 	}
 
+	public PhanSo nhan(PhanSo p) {
+
+		PhanSo product = new PhanSo();
+		product.tuSo = this.tuSo * p.tuSo;
+		product.mauSo = this.mauSo * p.mauSo;
+		return product;
+	}
+
+	public PhanSo rutGon() {
+		int a = tuSo;
+		int b = mauSo;
+		while (a != b) {
+			if (a > b) {
+				a = a - b;
+
+			} else {
+				b = b - a;
+			}
+		}
+		this.tuSo /= a;
+		this.mauSo /= b;
+		return new PhanSo(tuSo, mauSo);
+	}
 }
